@@ -58,6 +58,38 @@ if __name__ == "__main__":
     info_pais_lote = producto_ejemplo.identificar_pais_lote()
     print(info_pais_lote)
 
+    ################################# RESOLUCION DEL EJERCICIO_6 ########################################################
+    import os
+    from Ejercicio_6 import dividire, mostrar_menus
+
+    try:
+        while True:
+            mostrar_menus()
+            opcion = input("Ingrese la opción deseada: ")
+
+            if opcion == "1":
+                # División de dos números
+                num1 = float(input("Ingrese el primer número: "))
+                num2 = float(input("Ingrese el segundo número: "))
+
+                resultado = dividire(num1, num2)
+                if resultado is not None:
+                    print(f"Resultado de la división: {resultado}")
+
+            elif opcion == "0":
+                print("Saliendo del programa.")
+                break
+
+            else:
+                print("Opción no válida. Intente de nuevo.")
+    except Exception as e:
+        print(f"Se produjo un error: {e}")
+    else:
+        print(f"Directorio de trabajo actual: {os.getcwd()}")
+    finally:
+        print("Proceso terminado.")
+
+
     ################################ RESOLUCION DEL EJERCICIO_7 #############################################################
     
     mi_telefono = Phone(marca="Samsung", modelo="Galaxy A14", sistema_operativo="Android")
