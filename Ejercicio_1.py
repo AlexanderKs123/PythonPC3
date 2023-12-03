@@ -5,7 +5,6 @@ from Ejercicio_5 import Productos
 from Ejercicio_7 import Phone
 from Ejercicio_8 import Libro
 
-
 if __name__ == "__main__":
 
     ############################################### RESOLUCION DEL EJERCICIO_2 ################################################
