@@ -1,19 +1,19 @@
 
 from Ejercicio_2 import Circulo
 from Ejercicio_3 import Producto, Catalogo
+from Ejercicio_5 import Productos
 
 
-# RESOLUCION DEL EJERCICIO_2
 if __name__ == "__main__":
 
-    # RESOLUCION DEL EJERCICIO_2
+    ############################################### RESOLUCION DEL EJERCICIO_2 ################################################
     radio_circulo = 3
     mi_circulo = Circulo(radio_circulo)
     area_del_circulo = mi_circulo.calcular_area()
     print(f"El área del círculo con radio {radio_circulo} es: {area_del_circulo}")
 
 
-   # RESOLUCION DEL EJERCICIO_3
+   ################################################# RESOLUCION DEL EJERCICIO_3 ##############################################
     catalogo_tienda = Catalogo()
     producto5 = Producto(codigo=5, nombre="Filtros", precio=99.99)
     producto6 = Producto(codigo=6, nombre="Bateria", precio=19.99)
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     catalogo_tienda.agregar_producto(producto6)
     catalogo_tienda.mostrar_catalogo()
 
-    # RESOLUCION DEL EJERCICIO_4
+    ############################################### RESOLUCION DEL EJERCICIO_4 ############################################
 
     from Ejercicio_4 import dividir, mostrar_menu
 
@@ -45,9 +45,19 @@ if __name__ == "__main__":
         else:
             print("Opción no válida. Intente de nuevo.")
 
+    ################################# RESOLUCION DEL EJERCICIO_5 ########################################################
+
+    # Crear un objeto Producto
+    producto_ejemplo = Productos(nombre="Aceyte de Oliva", codigo="PERU-0001-2023")
+
+    # Imprimir el objeto de forma literal
+    print(producto_ejemplo)
+
+    # Identificar país y número de lote desde el código
+    info_pais_lote = producto_ejemplo.identificar_pais_lote()
+    print(info_pais_lote)
+
+    ################################ RESOLUCION DEL EJERCICIO_5 #############################################################
+
     
-    # RESOLUCION DEL EJERCICIO_5
-
-
-
     
