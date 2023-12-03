@@ -3,6 +3,8 @@ from Ejercicio_2 import Circulo
 from Ejercicio_3 import Producto, Catalogo
 from Ejercicio_5 import Productos
 from Ejercicio_7 import Phone
+from Ejercicio_8 import Libro
+
 
 if __name__ == "__main__":
 
@@ -74,4 +76,11 @@ if __name__ == "__main__":
     mi_telefono.verificar_bateria()
     
     ################################ RESOLUCION DEL EJERCICIO_8 #############################################################
-    
+    # Instanciar un objeto de la clase Libro con datos ingresados desde el teclado
+    nuevo_libro = Libro()
+
+    # Mostrar la información del libro
+    nuevo_libro.mostrar_informacion()
+
+    # Hacer una recomendación
+    nuevo_libro.recomendar()
