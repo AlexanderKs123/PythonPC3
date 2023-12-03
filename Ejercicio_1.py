@@ -2,7 +2,7 @@
 from Ejercicio_2 import Circulo
 from Ejercicio_3 import Producto, Catalogo
 from Ejercicio_5 import Productos
-
+from Ejercicio_7 import Phone
 
 if __name__ == "__main__":
 
@@ -57,7 +57,21 @@ if __name__ == "__main__":
     info_pais_lote = producto_ejemplo.identificar_pais_lote()
     print(info_pais_lote)
 
-    ################################ RESOLUCION DEL EJERCICIO_5 #############################################################
-
+    ################################ RESOLUCION DEL EJERCICIO_7 #############################################################
     
+    mi_telefono = Phone(marca="Samsung", modelo="Galaxy A14", sistema_operativo="Android")
+
+    mi_telefono.encender_apagar()
+    mi_telefono.verificar_bateria()
+
+    mi_telefono.llamar("940895764")
+    mi_telefono.verificar_bateria()
+
+    mi_telefono.cargar_bateria(20)
+    mi_telefono.verificar_bateria()
+
+    mi_telefono.llamar("940895764")
+    mi_telefono.verificar_bateria()
+    
+    ################################ RESOLUCION DEL EJERCICIO_8 #############################################################
     
